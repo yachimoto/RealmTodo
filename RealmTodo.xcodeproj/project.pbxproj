@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		CE0CD50D22EFEB820015E462 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE0CD50B22EFEB820015E462 /* Main.storyboard */; };
 		CE0CD50F22EFEB850015E462 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE0CD50E22EFEB850015E462 /* Assets.xcassets */; };
 		CE0CD51222EFEB850015E462 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE0CD51022EFEB850015E462 /* LaunchScreen.storyboard */; };
+		CE0CD51A22EFF0A20015E462 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CD51922EFF0A20015E462 /* InputViewController.swift */; };
+		CE0CD51C22EFF0EF0015E462 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CD51B22EFF0EF0015E462 /* Todo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		CE0CD50E22EFEB850015E462 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE0CD51122EFEB850015E462 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE0CD51322EFEB850015E462 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE0CD51922EFF0A20015E462 /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
+		CE0CD51B22EFF0EF0015E462 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 		D6FD7D5CFBB9E011023931FB /* Pods-RealmTodo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmTodo.release.xcconfig"; path = "Target Support Files/Pods-RealmTodo/Pods-RealmTodo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -46,7 +50,6 @@
 				9BC13B78558FB20153860645 /* Pods-RealmTodo.debug.xcconfig */,
 				D6FD7D5CFBB9E011023931FB /* Pods-RealmTodo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -79,14 +82,32 @@
 		CE0CD50622EFEB820015E462 /* RealmTodo */ = {
 			isa = PBXGroup;
 			children = (
+				CE0CD52022EFF22C0015E462 /* Objects */,
+				CE0CD51F22EFF1F40015E462 /* New Group */,
 				CE0CD50722EFEB820015E462 /* AppDelegate.swift */,
-				CE0CD50922EFEB820015E462 /* ViewController.swift */,
 				CE0CD50B22EFEB820015E462 /* Main.storyboard */,
 				CE0CD50E22EFEB850015E462 /* Assets.xcassets */,
 				CE0CD51022EFEB850015E462 /* LaunchScreen.storyboard */,
 				CE0CD51322EFEB850015E462 /* Info.plist */,
 			);
 			path = RealmTodo;
+			sourceTree = "<group>";
+		};
+		CE0CD51F22EFF1F40015E462 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				CE0CD50922EFEB820015E462 /* ViewController.swift */,
+				CE0CD51922EFF0A20015E462 /* InputViewController.swift */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		CE0CD52022EFF22C0015E462 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				CE0CD51B22EFF0EF0015E462 /* Todo.swift */,
+			);
+			path = Objects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,8 +225,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE0CD51A22EFF0A20015E462 /* InputViewController.swift in Sources */,
 				CE0CD50A22EFEB820015E462 /* ViewController.swift in Sources */,
 				CE0CD50822EFEB820015E462 /* AppDelegate.swift in Sources */,
+				CE0CD51C22EFF0EF0015E462 /* Todo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
