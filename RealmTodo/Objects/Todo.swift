@@ -6,4 +6,17 @@
 //  Copyright © 2019 谷地元　星斗. All rights reserved.
 //
 
-import Foundation
+import RealmSwift
+
+class Todo: Object {
+    
+//    ID
+    @objc dynamic var id: Int = 0
+//    title
+    @objc dynamic var title: String = ""
+//    登録日時
+    @objc dynamic var date: Date = Date()
+
+
+    
+}

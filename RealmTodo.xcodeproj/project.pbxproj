@@ -83,7 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				CE0CD52022EFF22C0015E462 /* Objects */,
-				CE0CD51F22EFF1F40015E462 /* New Group */,
+				CE0CD51F22EFF1F40015E462 /* Controllers */,
 				CE0CD50722EFEB820015E462 /* AppDelegate.swift */,
 				CE0CD50B22EFEB820015E462 /* Main.storyboard */,
 				CE0CD50E22EFEB850015E462 /* Assets.xcassets */,
@@ -93,13 +93,13 @@
 			path = RealmTodo;
 			sourceTree = "<group>";
 		};
-		CE0CD51F22EFF1F40015E462 /* New Group */ = {
+		CE0CD51F22EFF1F40015E462 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				CE0CD50922EFEB820015E462 /* ViewController.swift */,
 				CE0CD51922EFF0A20015E462 /* InputViewController.swift */,
 			);
-			path = "New Group";
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		CE0CD52022EFF22C0015E462 /* Objects */ = {
