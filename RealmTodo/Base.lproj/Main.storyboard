@@ -70,7 +70,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v4n-eG-Sjq">
-                                <rect key="frame" x="184" y="574" width="46" height="30"/>
+                                <rect key="frame" x="184" y="574" width="46" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
@@ -89,12 +89,13 @@
                         <viewLayoutGuide key="safeArea" id="SSD-cF-MbV"/>
                     </view>
                     <connections>
+                        <outlet property="button" destination="v4n-eG-Sjq" id="j0r-eB-rgV"/>
                         <outlet property="textField" destination="i4S-37-EnT" id="SME-kb-WTA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h04-8f-tnP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2099" y="-558"/>
+            <point key="canvasLocation" x="2098.5507246376815" y="-558.48214285714278"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="LCn-SP-EJu">

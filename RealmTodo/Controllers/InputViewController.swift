@@ -15,12 +15,25 @@ class InputViewController: UIViewController {
     
     @IBOutlet weak var textField: UITextField!
     
+    
+    @IBOutlet weak var button: UIButton!
+    
 //    前の場面から渡されてきたTODOを受け取る変数
     var todo: Todo? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        if todo == nil {
+            button.setTitle("追加", for: .normal)
+        } else{
+            //編集の場合
+            button.setTitle("更新", for: .normal)
+            textField.text = todo!.title
+        }
     }
     
     fileprivate func createNewTodo(_ text: String) {
@@ -41,6 +54,15 @@ class InputViewController: UIViewController {
         }
     }
     
+    fileprivate func extractedFunc(_ text: String) {
+        // 更新
+        let realm = try! Realm()
+        
+        try! realm.write {
+            todo?.title = text
+        }
+    }
+    
     @IBAction func didClickAddBtn(_ sender: UIButton) {
             
             // nilかチェックをする
@@ -55,9 +77,14 @@ class InputViewController: UIViewController {
                 // ボタンがクリックされた時の処理を中断
                 return
             }
-        
-//        新規タスクを追加
-        createNewTodo(text)
+        if todo == nil {
+            //        新規タスクを追加
+            createNewTodo(text)
+            
+        } else {
+            extractedFunc(text)
+        }
+
         
 //        前の画面に戻る
 //        NavicationControllerの持っている履歴から、一つ前の画面に戻る
@@ -80,4 +107,9 @@ class InputViewController: UIViewController {
         }
         
     }
+    // viewを押下時にキーボードを閉じる処理
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
 }
